@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+.env
+.venv
+.venv*
+env/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Testing
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+.tox/
+.nox/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+.adk/
+.google-agents-cli/
+.agents-cli-scripts/
+.persist_vector_store
+.saved_chats
+uv.lock

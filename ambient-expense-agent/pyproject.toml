@@ -1,0 +1,45 @@
+[project]
+name = "ambient-expense-agent"
+version = "0.1.0"
+description = "Event-driven expense approval agent — auto-approves low-risk expenses, routes high-value ones through LLM risk analysis and human review"
+authors = [
+    {name = "Soham S Sahana", email = "sohamssahana@gmail.com"},
+]
+readme = "README.md"
+license = {text = "Apache-2.0"}
+
+dependencies = [
+    "google-adk>=2.0.0,<3.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.34.0",
+]
+requires-python = ">=3.11,<3.14"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2,<10.0.0",
+    "pytest-asyncio>=1.0.0,<2.0.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["expense_agent"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.hatch.build.targets.wheel]
+packages = ["expense_agent"]
