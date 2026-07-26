@@ -1,0 +1,46 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "shipping_rates_query",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "What are your shipping rates?"}]
+      }
+    },
+    {
+      "eval_case_id": "order_tracking_query",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Where is my order ORD-1001?"}]
+      }
+    },
+    {
+      "eval_case_id": "refund_request",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "I want to return order ORD-1002. It doesn't fit my desk."}]
+      }
+    },
+    {
+      "eval_case_id": "unrelated_question",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "What's the weather like in San Francisco?"}]
+      }
+    },
+    {
+      "eval_case_id": "free_shipping_query",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Do you offer free shipping on large orders?"}]
+      }
+    },
+    {
+      "eval_case_id": "damaged_item",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "My keyboard arrived broken. What can I do?"}]
+      }
+    }
+  ]
+}

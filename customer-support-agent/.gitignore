@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.env
+.venv
+.venv*
+env/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# ADK
+.adk/
+
+# Type checkers
+.mypy_cache/
+.ty/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Lock file (large, reproducible from pyproject.toml)
+uv.lock
+
+# Ruff cache
+.ruff_cache/
