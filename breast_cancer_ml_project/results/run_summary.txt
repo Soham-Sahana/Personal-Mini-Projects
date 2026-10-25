@@ -1,0 +1,32 @@
+Actual run results (random_state=42, stratified 80/20 split)
+
+Baseline model comparison:
+                 Model  Accuracy  Precision  Recall     F1  ROC_AUC
+         Random Forest    0.9649     1.0000  0.9048 0.9500   0.9970
+Support Vector Machine    0.9825     0.9762  0.9762 0.9762   0.9954
+   Logistic Regression    0.9737     0.9756  0.9524 0.9639   0.9954
+     Gradient Boosting    0.9649     1.0000  0.9048 0.9500   0.9947
+         Decision Tree    0.9035     0.8974  0.8333 0.8642   0.8889
+
+Tuned model:
+                Model  Accuracy  Precision  Recall     F1  ROC_AUC
+Random Forest (tuned)    0.9737     1.0000  0.9286 0.9630   0.9974
+
+Tuning details:
+{
+  "baseline_best_model": "Random Forest",
+  "best_params": {
+    "model__max_depth": 5,
+    "model__min_samples_leaf": 1,
+    "model__n_estimators": 200
+  },
+  "best_cv_roc_auc": 0.9892672858617131,
+  "tuned_test_metrics": {
+    "Model": "Random Forest (tuned)",
+    "Accuracy": 0.9736842105263158,
+    "Precision": 1.0,
+    "Recall": 0.9285714285714286,
+    "F1": 0.9629629629629629,
+    "ROC_AUC": 0.9973544973544973
+  }
+}

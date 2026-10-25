@@ -1,0 +1,6 @@
+Dataset: Breast Cancer Wisconsin (Diagnostic), loaded using sklearn.datasets.load_breast_cancer
+Rows=569; predictor features=30; target=malignant (1) vs benign (0)
+Split: 80% train / 20% test, stratified, random_state=42
+Baseline models share the same held-out split; all preprocessing occurs inside sklearn pipelines.
+Tuning: GridSearchCV with 5-fold StratifiedKFold on training set only; test set used for final evaluation.
+Positive class for precision/recall/F1/ROC-AUC: malignant (1).

@@ -1,0 +1,17 @@
+{
+  "baseline_best_model": "Random Forest",
+  "best_params": {
+    "model__max_depth": 10,
+    "model__min_samples_leaf": 2,
+    "model__n_estimators": 200
+  },
+  "best_cv_roc_auc": 0.9902992776057792,
+  "tuned_test_metrics": {
+    "Model": "Random Forest (tuned)",
+    "Accuracy": 0.9736842105263158,
+    "Precision": 1.0,
+    "Recall": 0.9285714285714286,
+    "F1": 0.9629629629629629,
+    "ROC_AUC": 0.9966931216931217
+  }
+}
